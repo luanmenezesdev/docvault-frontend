@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Button.module.css';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'ghost';
+  variant?: 'primary' | 'ghost' | 'inverse';
   icon?: React.ReactNode;
 }
 
@@ -17,7 +17,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button ref={ref} className={buttonClasses} {...props}>
         {icon && <span className={styles.icon}>{icon}</span>}
-        {children}
+        {children && <span>{children}</span>}
       </button>
     );
   }

@@ -28,7 +28,11 @@
   transition: background-color var(--transition-fast);
 }
 
-.tr:hover {
+.clickable {
+  cursor: pointer;
+}
+
+.tr:hover, .clickable:hover {
   background-color: var(--background);
 }
 

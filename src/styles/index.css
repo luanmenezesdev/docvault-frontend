@@ -1,4 +1,5 @@
-@import './styles/variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import './variables.css';
 
 /* Modern CSS Reset */
 *, *::before, *::after {
@@ -19,6 +20,9 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground-primary);
 }
 
 img, picture, svg, video, canvas {

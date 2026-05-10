@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  background-color: var(--surface-inverse);
+  color: var(--foreground-inverse);
+  padding: 0 40px;
+}
+
+.infoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.versionLabel {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.versionTitle {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.updateInfo {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.newVersionBtn {
+  min-width: 200px;
+  width: auto;
+  height: 48px !important;
+  padding: 0 24px !important;
+}
+
+.actionBtn {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0 !important;
+}
+
+.content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--foreground-primary);
+  margin: 0;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}

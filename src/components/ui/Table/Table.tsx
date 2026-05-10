@@ -17,8 +17,12 @@ export const TableHeader: React.FC<React.ThHTMLAttributes<HTMLTableCellElement>>
   </th>
 );
 
-export const TableRow: React.FC<React.HTMLAttributes<HTMLTableRowElement>> = ({ children, className, ...props }) => (
-  <tr className={[styles.tr, className].filter(Boolean).join(' ')} {...props}>
+export const TableRow: React.FC<React.HTMLAttributes<HTMLTableRowElement>> = ({ children, className, onClick, ...props }) => (
+  <tr 
+    className={[styles.tr, onClick ? styles.clickable : '', className].filter(Boolean).join(' ')} 
+    onClick={onClick}
+    {...props}
+  >
     {children}
   </tr>
 );
